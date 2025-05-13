@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BXC-Ty-5eW">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LearnerCards Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="LearnerCards Item" customClass="LearnerCardViewController" customModule="TabbedLearnerCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvR-4p-amB">
+                                <rect key="frame" x="16" y="146" width="343" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="vBL-Zv-sJJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Question"/>
+                                <connections>
+                                    <action selector="showQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HN7-sl-p2I"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgJ-bO-332">
+                                <rect key="frame" x="16" y="239" width="343" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zum-cI-qYg">
+                                <rect key="frame" x="16" y="329" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Dgq-19-awh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t71-aU-ZFX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgK-wz-Vyz">
+                                <rect key="frame" x="32" y="20" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5Ad-4Q-Ou4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GgK-wz-Vyz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1qF-W6-Pzk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zum-cI-qYg" secondAttribute="bottom" constant="239" id="1wK-1G-9ao"/>
+                            <constraint firstItem="GgK-wz-Vyz" firstAttribute="trailing" secondItem="fvR-4p-amB" secondAttribute="trailing" id="8LG-sD-UUx"/>
+                            <constraint firstItem="UgJ-bO-332" firstAttribute="trailing" secondItem="zum-cI-qYg" secondAttribute="trailing" id="AwQ-GV-BYK"/>
+                            <constraint firstItem="fvR-4p-amB" firstAttribute="leading" secondItem="UgJ-bO-332" secondAttribute="leading" id="EDY-XZ-mJK"/>
+                            <constraint firstItem="UgJ-bO-332" firstAttribute="top" secondItem="fvR-4p-amB" secondAttribute="bottom" constant="40" id="Gp9-h3-GxR"/>
+                            <constraint firstItem="fvR-4p-amB" firstAttribute="top" secondItem="GgK-wz-Vyz" secondAttribute="bottom" constant="26" id="HNH-wS-LqB"/>
+                            <constraint firstItem="zum-cI-qYg" firstAttribute="top" secondItem="UgJ-bO-332" secondAttribute="bottom" constant="26" id="Q0Q-M8-HLY"/>
+                            <constraint firstItem="GgK-wz-Vyz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QgH-9Z-zn4"/>
+                            <constraint firstItem="fvR-4p-amB" firstAttribute="trailing" secondItem="UgJ-bO-332" secondAttribute="trailing" id="UUL-hg-2j9"/>
+                            <constraint firstItem="UgJ-bO-332" firstAttribute="leading" secondItem="zum-cI-qYg" secondAttribute="leading" id="Ztz-E0-Oaa"/>
+                            <constraint firstItem="GgK-wz-Vyz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hk1-5C-EXF"/>
+                            <constraint firstItem="GgK-wz-Vyz" firstAttribute="leading" secondItem="fvR-4p-amB" secondAttribute="leading" id="oPf-kn-5c6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="LearnerCards" image="uiwindow.split.2x1" catalog="system" landscapeImage="uiwindow.split.2x1" id="9ob-Yi-oJy"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="UgJ-bO-332" id="AZb-VF-bNg"/>
+                        <outlet property="questionLabel" destination="GgK-wz-Vyz" id="orx-HB-snj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="-27.436281859070466"/>
+        </scene>
+        <!--EditScreen-->
+        <scene sceneID="2JP-je-RHr">
+            <objects>
+                <viewController id="p1N-np-Jlz" customClass="EditCardsViewController" customModule="TabbedLearnerCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7CE-IM-d3d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a0R-QX-GET">
+                                <rect key="frame" x="16" y="20" width="343" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pl4-vs-oPx">
+                                <rect key="frame" x="16" y="63" width="343" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IM4-sb-Fna">
+                                <rect key="frame" x="16" y="106" width="343" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97254902119999997" green="0.98823529480000005" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="OK"/>
+                                <connections>
+                                    <action selector="buttonOKActionWithSender:" destination="p1N-np-Jlz" eventType="touchUpInside" id="KhS-rT-Qco"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5S6-Uu-qaQ"/>
+                        <color key="backgroundColor" red="0.96841150519999997" green="0.6216662154" blue="0.71491660379999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="EditScreen" image="pencil" catalog="system" id="JpP-x7-wHN"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="pl4-vs-oPx" id="bkj-dp-YtH"/>
+                        <outlet property="questionTextField" destination="a0R-QX-GET" id="RMd-Kh-Kj9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Run-Af-jDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1733.5999999999999" y="-27.436281859070466"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fcW-6l-94M">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BXC-Ty-5eW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IFP-Mc-Jjd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SWI-E6-LEg"/>
+                        <segue destination="p1N-np-Jlz" kind="relationship" relationship="viewControllers" id="bfZ-iC-SBa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EuP-KO-7g8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="-27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="uiwindow.split.2x1" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
